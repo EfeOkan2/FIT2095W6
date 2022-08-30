@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aqua;
+            }
+        
+        </style>
+    </head>
+    <body>
+
+        <h1>
+            <a href="index.html">Add Parcel</a>
+            <a href="getparcel.html">List Parcels</a>
+            <a href="updateparcel.html">Update Parcel</a>
+            <a href="deleteparcel.html">Delete Parcel</a>
+        </h1>
+
+        <form action="/addparcel" method="post">
+        Sender<input type="text" name="sender"/>
+        Address<input type="text" name="address"/>
+        Weight<input type="number" name="weight"/>
+        Fragile<input type="text" name="fragile"/>
+        <input type="submit" value="Add parcel"/>
+        </form>
+    </body>
+</html>

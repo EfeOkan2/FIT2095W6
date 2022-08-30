@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <style>
+        body{
+            background-color: rgb(255, 238, 0);
+        }
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>List Parcels</h1> </br>
+    <h1> <a href="index.html">Add Parcel</a>
+        <a href="getparcel.html">List Parcels</a>
+        <a href="updateparcel.html">Update Parcel</a>
+        <a href="deleteparcel.html">Delete Parcel</a>
+    </h1>
+    <table>
+        <tr>
+            <td>Sender</td>
+            <td>Address</td>
+            <td>Weight</td>
+            <td>Fragile</td>
+        </tr>
+        <% for (let i=0;i<parcelsDb.length;i++){ %>
+            <tr>
+                <td><%=parcelsDb[i].sender %> </td>
+                <td> <%=parcelsDb[i].address %> </td>
+                <td><%=parcelsDb[i].weight %></td>
+                <td><%=parcelsDb[i].fragile %></td>
+            </tr>
+            <%}%>
+    </table>
+</body>
+
+</html>
